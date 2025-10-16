@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+.text{
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+
+.skills-section {
+  min-height: 70vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  background-color: black;
+  color: white;
+}
+
+
+.skills-section h2,
+.skills-section h1 {
+  margin: 0;
+  padding: 0;
+}
+h2{
+    font-family: sans-serif;
+    color: white;
+    
+}
+span{
+    color: white;
+    font-family: sans-serif;
+}
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+}
+.main-skills .card{
+  width: 25%;
+  margin: 10px;
+  background: #2c2b2b;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-skills .card p{
+  font-size: 12px;
+}
+.main-skills .card button{
+  background: rgba(15, 61, 214, 0.938);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: rgba(16, 48, 226, 0.856);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Courses */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.course-box{
+  width: 100%;
+  height: 300px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 33%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+  border: solid white 1px;
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.box button{
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.box button:hover{
+  background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color: rgb(25, 94, 54);
+}
+.css{
+  color: rgb(104, 179, 35);
+}
+.js{
+  color: rgb(28, 98, 179);
+}
+
+.text_esta{
+  color: white;
+  font-family: sans-serif;
+}
+
+.link{
+  text-decoration: none;
+  font-size: 5px;
+  font-family: sans-serif;
+  color: #4a76ee;
+  
+}
+
+.num{
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4a76ee;
+}

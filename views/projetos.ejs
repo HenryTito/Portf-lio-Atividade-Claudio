@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title class="tit">Projetos</title>
+  <link rel="stylesheet" href="/css/projetos.css" />
+  <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/hero.css">
+</head>
+<body>
+  <%- include('partial/navbar') %>
+  <section class="projects" id="projects">
+    <h2 class="heading">Projetos</h2>
+    <div class="projects-box">
+      <% projetos.forEach((projeto) => { %>
+        <div class="project-card">
+          <img src="<%= projeto.imagem %>" alt="<%= projeto.titulo %>" />
+          <h3><%= projeto.titulo %></h3>
+          <p><%= projeto.descricao %></p>
+        </div>
+      <% }); %>
+    </div>
+  </section>
+  
+</body>
+</html>

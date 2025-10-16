@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000000 0%, #000000 50%, #000000 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #4a76ee, #4a76ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.btn-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-add {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #000000, #4a76ee);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 58, 219, 0.3);
+}
+
+.btn-add:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(1, 67, 167, 0.5);
+}
+
+.btn-add::before {
+    content: '+';
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.disciplinas-list {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.disciplina-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.disciplina-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(45deg, #4a76ee, #4a76ee);
+}
+
+.disciplina-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 77, 219, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.disciplina-nome {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    flex: 1;
+}
+
+.disciplina-botoes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.disciplina-botoes a {
+    color: #4a76ee;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 40, 219, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.disciplina-botoes a:hover {
+    background: rgba(4, 55, 196, 0.363);
+    transform: translateY(-2px);
+}
+
+.disciplina-botoes form {
+    margin: 0;
+}
+
+.disciplina-botoes button {
+    background: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.disciplina-botoes button:hover {
+    background: rgba(220, 53, 69, 0.3);
+    transform: translateY(-2px);
+}
+
+
+.no-disciplinas {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+}
+
+.no-disciplinas::before {
+    content: '📚';
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .disciplina-item {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .disciplina-botoes {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .btn-add {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.disciplina-item {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.disciplina-item:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+.disciplina-item:nth-child(even) {
+    animation-delay: 0.2s;
+}

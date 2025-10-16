@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nome": "Modelagem de Banco de Dados"
+  },
+  {
+    "id": 2,
+    "nome": "Sistemas operacionais e Redes de Computadores"
+  },
+  {
+    "id": 3,
+    "nome": "Design Digital"
+  },
+  {
+    "id": 4,
+    "nome": "Desenvolvimento Web"
+  },
+  {
+    "id": 5,
+    "nome": "Algoritmos e lógicas de programação"
+  },
+  {
+    "id": 7,
+    "nome": "Estrutura de Dados"
+  },
+  {
+    "id": 8,
+    "nome": "Técnicas de Programação"
+  },
+  {
+    "id": 9,
+    "nome": "Banco de Dados Relacional"
+  },
+  {
+    "id": 10,
+    "nome": "Engenharia de Software"
+  },
+  {
+    "id": 11,
+    "nome": "Matemática para computação"
+  }
+]
